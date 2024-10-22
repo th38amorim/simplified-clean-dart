@@ -59,9 +59,8 @@ A camada **Domain** contém as **Entidades** e **Casos de Uso**.
 - **Casos de Uso**: Executam a lógica de negócio, acessando camadas externas apenas por meio de contratos (interfaces).  
 Não deve haver implementações de **Repositories** ou **Services** dentro do **Domain** — apenas os contratos de interface.
 
-### **Infrastructure (Infra)**
-Implementa as interfaces definidas no **Domain** e adapta dados externos para cumprir os contratos.  
-Aqui podemos ter a implementação de **Repositories**, **Services**, **DataSources** (para acesso externo), e **Drivers** (para comunicação com hardware).
+### **Infrastructure (Infra)**  
+Aqui temos as implementações de **Repositories**, **Services**, **Datasources** (para acesso externo), e **Drivers** (para comunicação com hardware).
 
 ### **External**
 A camada **External** contém tudo que pode ser alterado sem a intervenção do programador.  
